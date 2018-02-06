@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void openGallery()
     {
-        Intent intent = new Intent(getApplicationContext(),editorwindow.class);
+        Intent intent = new Intent(getApplicationContext(),edit.class);
         startActivity(intent);
     }
 }
