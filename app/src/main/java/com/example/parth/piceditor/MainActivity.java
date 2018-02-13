@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button;
+    Button button,button1,button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         button = (Button) findViewById(R.id.button);
+        button1 = (Button) findViewById(R.id.button3);
+        button2 = (Button) findViewById(R.id.button4);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,12 +32,23 @@ public class MainActivity extends AppCompatActivity {
                 openGallery();
             }
         });
-
     }
 
     private void openGallery()
     {
         Intent intent = new Intent(getApplicationContext(),edit.class);
+        startActivity(intent);
+    }
+
+    public void openOriginal(View view)
+    {
+        Intent intent = new Intent(getApplicationContext(),originalimage.class);
+        startActivity(intent);
+    }
+
+    public void openImage(View view)
+    {
+        Intent intent = new Intent(getApplicationContext(),imageactivity.class);
         startActivity(intent);
     }
 }

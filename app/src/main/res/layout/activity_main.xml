@@ -17,6 +17,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Browse"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:onClick="openOriginal"
+            android:text="Download Original"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openImage"
+            android:text="Download Image"
             android:textAllCaps="false" />
 
     </LinearLayout>
